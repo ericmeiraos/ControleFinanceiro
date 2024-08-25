@@ -1,0 +1,108 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para botões */
+button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    /* Altera a cor de fundo do botão quando o mouse está sobre ele */
+    background-color: #0056b3;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    /* Adiciona preenchimento ao conteúdo principal da página */
+    padding: 20px;
+}
+
+/* Estilos para seções principais */
+.secao-saldo, .secao-resumo, .secao-transacoes, .secao-adicionar-transacao {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o display do saldo */
+.display-saldo {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Estilos para itens de resumo */
+.item-resumo {
+    /* Adiciona margem inferior entre os itens de resumo */
+    margin-bottom: 10px;
+}
+
+/* Estilos para a lista de transações */
+.lista-transacoes {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-transacoes li {
+    position: relative;
+    background-color: #dce1f8;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Estilos para grupos de formulário */
+.grupo-formulario {
+    /* Adiciona margem inferior aos grupos de formulário */
+    margin-bottom: 10px;
+}
+
+/* Estilos para o botão de envio do formulário */
+.botao-submit {
+    /* Define a cor de fundo do botão de envio do formulário */
+    background-color: #28a745;
+}
+
+.botao-submit:hover {
+    /* Altera a cor de fundo do botão de envio quando o mouse está sobre ele */
+    background-color: #218838;
+}
+
+/* Estilos para o botão de remoção */
+.botao-remover {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mostrar botão de remoção ao passar o mouse sobre o item da lista */
+.lista-transacoes li:hover .botao-remover {
+    display: block;
+}
